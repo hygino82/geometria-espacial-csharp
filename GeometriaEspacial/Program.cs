@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GeometriaEspacial.Entidades;
+using GeometriaEspacial.Entidades.Enums;
+using System;
 
 namespace GeometriaEspacial
 {
@@ -6,7 +8,8 @@ namespace GeometriaEspacial
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Poliedro pol1 = new Prisma(BasePoligono.Quadrado, 12.0, 10.0);
+            Console.WriteLine(pol1);
         }
     }
 }
